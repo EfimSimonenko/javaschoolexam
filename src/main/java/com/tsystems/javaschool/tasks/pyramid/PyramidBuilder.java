@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PyramidBuilder {
 
-    public static int pyromidLength;
+    public static int pyromidLength; //max array length
 
     /**
      * Builds a pyramid with sorted values (with minumum value at the top line and maximum at the bottom,
@@ -18,7 +18,6 @@ public class PyramidBuilder {
      */
     public int[][] buildPyramid (List<Integer> inputNumbers) throws CannotBuildPyramidException{
         // TODO : Implement your solution here
-
         if (checkIfValuable(inputNumbers)) {
             Collections.sort(inputNumbers);
             List<ArrayList<Integer>> full = getArrays(inputNumbers);
