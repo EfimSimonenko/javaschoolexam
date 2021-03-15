@@ -12,7 +12,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 ### Result ###
 
 * Author name : Efim Simonenko
-* Codeship : {PUT YOUR CODESHIP BAGDE HERE}
+* Codeship : https://app.codeship.com/projects/945d080e-6876-45de-a803-b672e6969cb3/builds/4890508e-0fde-4c78-9ccb-b284fd8b07ab?component=d26c069e-327a-4e90-a896-13518fffb33a_1615766388_combined
 
 
 ### How to start?  ###
