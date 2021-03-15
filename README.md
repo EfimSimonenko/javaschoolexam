@@ -12,7 +12,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 ### Result ###
 
 * Author name : Efim Simonenko
-* Codeship : https://app.codeship.com/projects/945d080e-6876-45de-a803-b672e6969cb3/status?branch=master
+* Codeship : [![Codeship Status for EfimSimonenko/javaschoolexam](https://app.codeship.com/projects/945d080e-6876-45de-a803-b672e6969cb3/status?branch=master)](https://app.codeship.com/projects/434313)
 
 
 ### How to start?  ###
