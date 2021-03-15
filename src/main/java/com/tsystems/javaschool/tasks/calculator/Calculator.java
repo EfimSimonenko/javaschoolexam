@@ -1,5 +1,8 @@
 package com.tsystems.javaschool.tasks.calculator;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Calculator {
 
     /**
@@ -28,16 +31,19 @@ class CalculationPerformer {
 
     //custom toString method to remove frictional digits if 0, or remove all but four digits
     String customToString(Double input) {
-        String inputString = input.toString();
-        String intPart = inputString.substring(0, inputString.indexOf('.'));
-        String fractPart = inputString.substring(inputString.indexOf('.') + 1);
-        if (fractPart.length() > 4) {
-            fractPart = fractPart.substring(0, 3);
+        String inputString = BigDecimal.valueOf(input).
+                setScale(4, RoundingMode.HALF_UP).toString();
+        for (int i = inputString.length() - 1; inputString.charAt(i) != '.'; i--) {
+            if (inputString.charAt(i) != '0' ) break;
+            inputString = inputString.substring(0,i);
         }
-        for (int i = 0; i < fractPart.length(); i++) {
-            if (fractPart.charAt(i) != '0') return intPart.concat(".").concat(fractPart);
+        //in case no digits after '.' left, remove dot
+        if (inputString.charAt(inputString.length() - 1) == '.') {
+            inputString = inputString.substring(0,inputString.length() - 1);
+
         }
-        return intPart;
+
+        return inputString;
     }
 
     void nextChar() {

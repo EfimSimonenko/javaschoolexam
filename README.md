@@ -15,6 +15,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 * Codeship : [![Codeship Status for EfimSimonenko/javaschoolexam](https://app.codeship.com/projects/945d080e-6876-45de-a803-b672e6969cb3/status?branch=master)](https://app.codeship.com/projects/434313)
 
 
+
 ### How to start?  ###
 * Install [GIT](https://git-scm.com/) and [Maven](https://maven.apache.org)
 * [Fork](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html) the repository 
